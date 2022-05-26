@@ -69,6 +69,7 @@ public class WaffleRepository {
 				System.out.println("현재 exp: " + man.getExp());
 			}
 			man.setLocation(1);
+			man.setHp(30);
 			System.out.println("마을로 돌아갑니다.");
 		}
 		return man;
@@ -84,43 +85,43 @@ public class WaffleRepository {
 		System.out.println("  !! LEVEL UP !!");
 		System.out.println();
 		
-		if(newMan.getLevel()==1) {
+		if(newMan.getLevel()==1 && newMan.getExp()>=50) {
 			newMan.setLevel(2);
 			newMan.setHp(70);
 			newMan.setMp(70);
 			newMan.setExp(newMan.getExp()-50);
 			System.out.println(newMan);
-		} else if(newMan.getLevel()==2) {
+		} else if(newMan.getLevel()==2  && newMan.getExp()>=100) {
 			newMan.setLevel(3);
 			newMan.setHp(100);
 			newMan.setMp(100);
 			newMan.setExp(newMan.getExp()-150);
 			System.out.println(newMan);
-		} else if(newMan.getLevel()==3) {
+		} else if(newMan.getLevel()==3  && newMan.getExp()>=250) {
 			newMan.setLevel(4);
 			newMan.setHp(150);
 			newMan.setMp(150);
 			newMan.setExp(newMan.getExp()-250);
 			System.out.println(newMan);
-		} else if(newMan.getLevel()==4) {
+		} else if(newMan.getLevel()==4 && newMan.getExp()>=300) {
 			newMan.setLevel(5);
 			newMan.setHp(200);
 			newMan.setMp(200);
 			newMan.setExp(newMan.getExp()-300);
 			System.out.println(newMan);
-		} else if(newMan.getLevel()==5) {
+		} else if(newMan.getLevel()==5 && newMan.getExp()>=350) {
 			newMan.setLevel(6);
 			newMan.setHp(250);
 			newMan.setMp(250);
 			newMan.setExp(newMan.getExp()-350);
 			System.out.println(newMan);
-		} else if(newMan.getLevel()==6) {
+		} else if(newMan.getLevel()==6 && newMan.getExp()>=400) {
 			newMan.setLevel(7);
 			newMan.setHp(300);
 			newMan.setMp(300);
 			newMan.setExp(newMan.getExp()-400);
 			System.out.println(newMan);
-		} else if(newMan.getLevel()==7) {
+		} else if(newMan.getLevel()==7 && newMan.getExp()>=450) {
 			newMan.setLevel(8);
 			newMan.setHp(350);
 			newMan.setMp(350);
